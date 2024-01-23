@@ -1,0 +1,33 @@
+import turtle
+from turtle import *
+forward(90)
+left(180)
+forward(50)
+
+for steps in range(100):
+    for c in ('black','gold','silver'):
+        color(c)
+        forward(steps)
+        right(90)
+        backward(90)
+        forward(100)
+        left(90)
+        right(90)
+        left(150)
+        right(150)
+        left(350)
+        left(90)
+        backward(180)
+        left(360)
+        forward(100)
+        left(360)
+        right(360)
+        color('silver')
+        fillcolor('black')
+
+        while True:
+            forward(360)
+            left(180)
+            if abs(pos()) >=1:
+                break
+             
